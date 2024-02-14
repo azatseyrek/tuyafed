@@ -18,7 +18,7 @@ export default function Home() {
     pauseOnHover: true,
   };
   return (
-    <main className="grid grid-cols-1 gap-8 lg:gap-16">
+    <main className="grid grid-cols-1 gap-12 lg:gap-16">
       <Slider {...settings} autoplay className="-z-0">
         <div className="max-h-[500px]">
           <Image
