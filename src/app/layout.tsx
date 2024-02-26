@@ -25,7 +25,7 @@ export default function RootLayout({
       >
         <Navbar />
         <Sidebar />
-        <main className="flex flex-1 items-center justify-center px-4 lg:px-20 mt-4">
+        <main className="flex flex-1 max-w-[1800px] self-center items-center justify-center px-4 lg:px-20 mt-4">
           {children}
         </main>
         <Footer />

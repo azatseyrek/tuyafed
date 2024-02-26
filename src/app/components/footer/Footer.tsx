@@ -1,5 +1,4 @@
 import Image from "next/image";
-import TuyafedLogo from "../../assets/tuyafed-footer.png";
 
 interface FooterProps {}
 
@@ -8,8 +7,9 @@ const Footer = ({}: FooterProps) => {
     <footer className="footer p-10 bg-secondary text-white mt-40 z-30 ">
       <aside className="">
         <Image
-          src={TuyafedLogo}
+          src={"/assets/tuyafed-footer.png"}
           width={160}
+          height={160}
           className="cursor-pointer active:scale-95 transition-transform grayscale"
           alt="tuyafed-logo"
         />
@@ -18,9 +18,9 @@ const Footer = ({}: FooterProps) => {
           bir araya gelerek kurulan bir çatı kuruluştur.
         </p>
       </aside>
-      <nav>
-        <h6 className="footer-title">Social</h6>
-        <div className="grid grid-flow-col gap-4">
+      <nav className="flex flex-col w-full items-end">
+        <h6 className="footer-title">Takip Et</h6>
+        <div className="grid grid-flow-col gap-4 ">
           <a>
             <svg
               xmlns="http://www.w3.org/2000/svg"

@@ -21,7 +21,6 @@ import {
 } from "@heroicons/react/20/solid";
 import Image from "next/image";
 import Link from "next/link";
-import TuyafedLogo from "../../assets/tuyafed-main-logo.svg";
 
 const products = [
   { name: "Analytics", description: "", href: "#", icon: ChartPieIcon },
@@ -53,8 +52,9 @@ const Navbar = () => {
             <span className="sr-only">TUYAFED</span>
 
             <Image
-              src={TuyafedLogo}
+              src={"/assets/tuyafed-main-logo.svg"}
               width={250}
+              height={70}
               className="cursor-pointer active:scale-95 transition-transform w-[150px] lg:w-[250px]"
               alt="tuyafed-logo"
             />
@@ -262,8 +262,9 @@ const Navbar = () => {
             <a href="#" className=" sm:opacity-0">
               <span className="sr-only">TUYAFED</span>
               <Image
-                src={TuyafedLogo}
+                src={"/assets/tuyafed-main-logo.svg"}
                 width={140}
+                height={40}
                 className="cursor-pointer active:scale-95 transition-transform "
                 alt="tuyafed-logo"
               />
