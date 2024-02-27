@@ -10,7 +10,7 @@ const Footer = ({}: FooterProps) => {
           src={"/assets/tuyafed-footer.png"}
           width={160}
           height={160}
-          className="cursor-pointer active:scale-95 transition-transform grayscale"
+          className="w-auto h-auto cursor-pointer active:scale-95 transition-transform grayscale"
           alt="tuyafed-logo"
         />
         <p className="opacity-50">

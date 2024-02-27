@@ -75,8 +75,8 @@ const Navbar = () => {
           <Link href="/" className="text-sm font-semibold leading-6 ">
             Anasayfa
           </Link>
-          <Popover className="relative ">
-            <Popover.Button className="flex items-center gap-x-1 text-sm font-semibold leading-6 ">
+          <Popover className="relative">
+            <Popover.Button className="flex items-center outline-none gap-x-1 text-sm font-semibold leading-6 ">
               Kurumsal
               <ChevronDownIcon
                 className="h-5 w-5 flex-none "
@@ -120,7 +120,7 @@ const Navbar = () => {
             </Transition>
           </Popover>
           <Popover className="relative ">
-            <Popover.Button className="flex items-center gap-x-1 text-sm font-semibold leading-6 ">
+            <Popover.Button className="flex outline-none items-center gap-x-1 text-sm font-semibold leading-6 ">
               Kurullarımız
               <ChevronDownIcon
                 className="h-5 w-5 flex-none "
@@ -164,7 +164,7 @@ const Navbar = () => {
             </Transition>
           </Popover>
           <Popover className="relative ">
-            <Popover.Button className="flex items-center gap-x-1 text-sm font-semibold leading-6 ">
+            <Popover.Button className="flex outline-none items-center gap-x-1 text-sm font-semibold leading-6 ">
               Çalıştay
               <ChevronDownIcon
                 className="h-5 w-5 flex-none "

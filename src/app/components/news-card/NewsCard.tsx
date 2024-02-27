@@ -24,7 +24,7 @@ const NewsCard = ({ data }: NewsCardProps) => {
           alt={`Haber-${data.id}`}
           width={800}
           height={600}
-          className="w-full object-cover object-top"
+          className="w-full h-full object-cover"
         />
       </figure>
       <div className="card-body flex flex-col justify-between h-1/3">

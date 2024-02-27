@@ -2221,11 +2221,6 @@ queue-microtask@^1.2.2:
   resolved "https://registry.yarnpkg.com/queue-microtask/-/queue-microtask-1.2.3.tgz#4929228bbc724dfac43e0efb058caf7b6cfb6243"
   integrity sha512-NuaNSa6flKT5JaSYQzJok04JzTL1CA6aGhv5rfLW3PgqA+M2ChpZQnAC8h8i4ZFkBS8X5RqkDBHA7r4hej3K9A==
 
-react-circular-menu@^2.4.8:
-  version "2.4.8"
-  resolved "https://registry.yarnpkg.com/react-circular-menu/-/react-circular-menu-2.4.8.tgz#8a06690bd2293cac9984b17f00aaacf16fbdadab"
-  integrity sha512-rmBETH7HeeHCAM3vQgTh7TWTQrRfKPnPOnez0gA1R9uGwQR/9T01RKXNKwAfBsvOVwJvejVLwxK2mWjiBoQ1Ug==
-
 react-countup@^6.5.0:
   version "6.5.0"
   resolved "https://registry.yarnpkg.com/react-countup/-/react-countup-6.5.0.tgz#2671035ec5012ed8db097a79d08fa6f193e139d3"

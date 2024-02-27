@@ -30,6 +30,7 @@ export default function Home() {
             width={600}
             height={400}
             className="object-cover object-center w-full "
+            priority
           />
         </div>
         <div className="max-h-[500px]">
@@ -39,6 +40,7 @@ export default function Home() {
             width={600}
             height={400}
             className="object-cover object-center w-full "
+            priority
           />
         </div>
         <div className="max-h-[500px]">
@@ -48,6 +50,7 @@ export default function Home() {
             width={600}
             height={400}
             className="object-cover object-center w-full"
+            priority
           />
         </div>
       </Slider>
@@ -97,37 +100,41 @@ export default function Home() {
 
       <section className="md:h-[500px] bg-primary bg-doted-world-map flex flex-col lg:flex-row items-center justify-evenly gap-8 p-16">
         <div className="flex flex-col items-center justify-center gap-8">
-          <CountUp
-            className="text-5xl text-secondary font-bold"
-            start={0}
-            end={35}
-            duration={5}
-            enableScrollSpy
-          />
+          <CountUp start={0} end={35} duration={5} enableScrollSpy>
+            {({ countUpRef }) => (
+              <span
+                className="text-5xl text-secondary font-bold"
+                ref={countUpRef}
+              />
+            )}
+          </CountUp>
+
           <span className="font-bold text-2xl text-neutral text-center">
             Anlaşma Yapılan Ülkeler
           </span>
         </div>
         <div className="flex flex-col items-center gap-8">
-          <CountUp
-            className="text-5xl text-secondary font-bold"
-            start={0}
-            end={22}
-            duration={5}
-            enableScrollSpy
-          />
+          <CountUp start={0} end={22} duration={5} enableScrollSpy>
+            {({ countUpRef }) => (
+              <span
+                className="text-5xl text-secondary font-bold"
+                ref={countUpRef}
+              />
+            )}
+          </CountUp>
           <span className="font-bold text-2xl text-neutral text-center">
             Yurtdışı Temsilcilikler
           </span>
         </div>
         <div className="flex flex-col items-center gap-8">
-          <CountUp
-            className="text-5xl text-secondary font-bold"
-            start={30000}
-            end={34000}
-            duration={5}
-            enableScrollSpy
-          />
+          <CountUp start={30000} end={34000} duration={5} enableScrollSpy>
+            {({ countUpRef }) => (
+              <span
+                className="text-5xl text-secondary font-bold"
+                ref={countUpRef}
+              />
+            )}
+          </CountUp>
           <span className="font-bold text-2xl text-neutral text-center">
             İhracat Potansiyeli Olan Üyeler
           </span>
