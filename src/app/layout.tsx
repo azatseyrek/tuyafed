@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import "./styles/globals.css";
 import "./styles/reset.css";
-import Navbar from "./components/navber/Navbar";
+import Navbar from "./components/navbar/Navbar";
 import Footer from "./components/footer/Footer";
 import Sidebar from "./components/sidebar/Sidebar";
 
@@ -25,7 +25,7 @@ export default function RootLayout({
       >
         <Navbar />
         <Sidebar />
-        <main className="flex flex-1 max-w-[1800px] self-center items-center justify-center px-4 lg:px-20 mt-4">
+        <main className="flex flex-1 w-full max-w-[1800px] self-center items-center justify-center px-4 lg:px-20 mt-4">
           {children}
         </main>
         <Footer />

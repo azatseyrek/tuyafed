@@ -8,6 +8,7 @@ import "slick-carousel/slick/slick.css";
 
 import NewsCard from "./components/news-card/NewsCard";
 import { data_haberler } from "./data/haberler";
+import Link from "next/link";
 
 export default function Home() {
   let settings = {
@@ -18,6 +19,7 @@ export default function Home() {
     slidesToScroll: 1,
     arrows: false,
     pauseOnHover: true,
+    adaptiveHeight: true,
   };
 
   let settingsForLogos = {
@@ -59,37 +61,48 @@ export default function Home() {
   };
 
   return (
-    <main className="grid grid-cols-1 gap-12 lg:gap-20">
+    <div className="grid grid-cols-1 gap-12 lg:gap-20">
       <Slider {...settings} autoplay className="-z-0">
-        <div className="max-h-[600px]">
-          <Image
-            src={"/assets/ai1.jpeg"}
-            alt="asd"
-            width={600}
-            height={400}
-            className="object-cover object-center w-full "
-            priority
-          />
+        <div>
+          <div className="hero h-[400px] lg:h-[600px] bg-[url(https://images.unsplash.com/photo-1549778399-f94fd24d4697?q=80&w=1548&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)]">
+            <div className="hero-overlay bg-opacity-50"></div>
+            <div className="hero-content text-left  w-full text-neutral-content">
+              <div className="flex flex-col items-end gap-6">
+                <h1 className=" text-2xl lg:text-3xl text-primary font-bold self-start ">
+                  Provident cupiditate voluptatem et in. Quaerat fugiat ut
+                </h1>
+                <p className="self-start">
+                  Provident cupiditate voluptatem et in. Quaerat fugiat ut
+                  assumenda excepturi exercitationem quasi. In deleniti eaque
+                  aut repudiandae et a id nisi.
+                </p>
+                <button className="btn btn-outline btn-primary">Devamı</button>
+              </div>
+            </div>
+          </div>
         </div>
-        <div className="max-h-[600px]">
-          <Image
-            src={"/assets/ai1.jpeg"}
-            alt="asd"
-            width={600}
-            height={400}
-            className="object-fit object-center w-full "
-            priority
-          />
-        </div>
-        <div className="max-h-[600px]">
-          <Image
-            src={"/assets/ai1.jpeg"}
-            alt="asd"
-            width={600}
-            height={400}
-            className="object-cover object-center w-full "
-            priority
-          />
+        <div>
+          <div className="hero h-[400px] lg:h-[600px] bg-[url(https://images.unsplash.com/photo-1549778399-f94fd24d4697?q=80&w=1548&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)]">
+            <div className="hero-overlay bg-opacity-50"></div>
+            <div className="hero-content text-left  w-full text-neutral-content px-12">
+              <div className="flex flex-col items-end gap-6">
+                <h1 className=" text-2xl lg:text-3xl text-primary font-bold self-start ">
+                  Provident cupiditate voluptatem et in. Quaerat fugiat ut
+                </h1>
+                <p className="self-start">
+                  Provident cupiditate voluptatem et in. Quaerat fugiat ut
+                  assumenda excepturi exercitationem quasi. In deleniti eaque
+                  aut repudiandae et a id nisi.
+                </p>
+                <Link
+                  href="/hakkimizda"
+                  className="btn btn-outline btn-primary"
+                >
+                  Devamı
+                </Link>
+              </div>
+            </div>
+          </div>
         </div>
       </Slider>
 
@@ -335,17 +348,16 @@ export default function Home() {
           className="carousel carousel-center rounded-box"
         >
           <Image
-            src={"/assets/sponsorlar/abiad.png"}
-            alt="abiad"
+            src={"/assets/sponsorlar/biltekder.png"}
+            alt="biltekder"
             width={300}
             height={200}
             priority
             className="logo"
           />
-
           <Image
-            src={"/assets/sponsorlar/biltekder.png"}
-            alt="biltekder"
+            src={"/assets/sponsorlar/programcilardernegi.png"}
+            alt="programcilarder"
             width={300}
             height={200}
             priority
@@ -371,8 +383,8 @@ export default function Home() {
           />
 
           <Image
-            src={"/assets/sponsorlar/programcilardernegi.png"}
-            alt="programcilarder"
+            src={"/assets/sponsorlar/abiad.png"}
+            alt="abiad"
             width={300}
             height={200}
             priority
@@ -389,6 +401,6 @@ export default function Home() {
           />
         </Slider>
       </section>
-    </main>
+    </div>
   );
 }
