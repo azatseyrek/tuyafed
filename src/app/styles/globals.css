@@ -4,9 +4,29 @@
 
 
 
-.image {
-    border-radius: .4rem;
+
+:root {
+    --polka-bg-image:
+        radial-gradient(rgb(158, 158, 158) 10%, transparent 10%),
+        radial-gradient(rgb(158, 158, 158) 10%, transparent 10%);
+    --polka-bg-position: 0px 0px, 8px 8px;
+    --polka-bg-size: 16px 16px;
+    --polka-bg-color: rgb(243, 244, 246);
 }
+
+/* ...or add this class to an element */
+.doted-bg {
+    background-image:
+        radial-gradient(rgb(158, 158, 158) 10%, transparent 10%),
+        radial-gradient(rgb(158, 158, 158) 10%, transparent 10%);
+    background-position: 0px 0px, 8px 8px;
+    background-size: 16px 16px;
+    background-color: rgb(243, 244, 246);
+}
+
+
+
+
 
 .slick-dots li button:before {
     color: #d47632 !important;
@@ -22,6 +42,11 @@
     border-radius: 16px;
 
 }
+
+.slick-slide .logo {
+    padding: 0 12px;
+}
+
 
 .grid-container {
     /**

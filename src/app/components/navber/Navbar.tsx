@@ -42,7 +42,7 @@ const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="bg-base-200 sticky top-0 z-50 ">
+    <header className="bg-base-100 sticky top-0 z-50 ">
       <nav
         className="mx-auto flex items-center justify-between p-4 lg:px-20"
         aria-label="Global"
@@ -63,7 +63,7 @@ const Navbar = () => {
         <div className="flex lg:hidden">
           <button
             type="button"
-            className="inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
+            className="inline-flex items-center justify-center rounded-md p-2.5 text-secondary"
             onClick={() => setMobileMenuOpen(true)}
           >
             <span className="sr-only">Open main menu</span>
@@ -98,11 +98,11 @@ const Navbar = () => {
                   {products.map((item) => (
                     <div
                       key={item.name}
-                      className="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50"
+                      className="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-primary"
                     >
-                      <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
+                      <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-base group-hover:bg-base-300">
                         <item.icon
-                          className="h-6 w-6 text-gray-600 group-hover:text-indigo-600"
+                          className="h-6 w-6 text-gray-600 group-hover:text-orange-600"
                           aria-hidden="true"
                         />
                       </div>
@@ -142,11 +142,11 @@ const Navbar = () => {
                   {products.map((item) => (
                     <div
                       key={item.name}
-                      className="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50"
+                      className="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-primary"
                     >
                       <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
                         <item.icon
-                          className="h-6 w-6 text-gray-600 group-hover:text-indigo-600"
+                          className="h-6 w-6 text-gray-600 group-hover:text-orange-600"
                           aria-hidden="true"
                         />
                       </div>
@@ -257,7 +257,7 @@ const Navbar = () => {
         onClose={setMobileMenuOpen}
       >
         <div className="fixed inset-0 z-10" />
-        <Dialog.Panel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white transition-all px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+        <Dialog.Panel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-base-100 transition-all px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div className="flex items-center justify-between">
             <a href="#" className=" sm:opacity-0">
               <span className="sr-only">TUYAFED</span>
@@ -283,14 +283,14 @@ const Navbar = () => {
               <div className="space-y-2 py-6">
                 <Link
                   href="/"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7  hover:bg-gray-50"
+                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7  hover:bg-secondary hover:text-white"
                 >
                   Anasayfa
                 </Link>
                 <Disclosure as="div" className="-mx-3">
                   {({ open }) => (
                     <>
-                      <Disclosure.Button className="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7  hover:bg-gray-50">
+                      <Disclosure.Button className="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7  hover:bg-secondary hover:text-white">
                         Kurumsal
                         <ChevronDownIcon
                           className={classNames(
@@ -306,7 +306,7 @@ const Navbar = () => {
                             key={item.name}
                             as="a"
                             href={item.href}
-                            className="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7  hover:bg-gray-50"
+                            className="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7  hover:bg-secondary hover:text-white"
                           >
                             {item.name}
                           </Disclosure.Button>
@@ -318,7 +318,7 @@ const Navbar = () => {
                 <Disclosure as="div" className="-mx-3">
                   {({ open }) => (
                     <>
-                      <Disclosure.Button className="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 hover:bg-gray-50">
+                      <Disclosure.Button className="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 hover:bg-secondary hover:text-white">
                         Kurullarımız
                         <ChevronDownIcon
                           className={classNames(
@@ -334,7 +334,7 @@ const Navbar = () => {
                             key={item.name}
                             as="a"
                             href={item.href}
-                            className="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 hover:bg-gray-50"
+                            className="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 hover:bg-secondary hover:text-white"
                           >
                             {item.name}
                           </Disclosure.Button>
@@ -346,7 +346,7 @@ const Navbar = () => {
                 <Disclosure as="div" className="-mx-3">
                   {({ open }) => (
                     <>
-                      <Disclosure.Button className="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 hover:bg-gray-50">
+                      <Disclosure.Button className="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 hover:bg-secondary hover:text-white">
                         Çalıştay
                         <ChevronDownIcon
                           className={classNames(
@@ -362,7 +362,7 @@ const Navbar = () => {
                             key={item.name}
                             as="a"
                             href={item.href}
-                            className="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 hover:bg-gray-50"
+                            className="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 hover:bg-secondary hover:text-white"
                           >
                             {item.name}
                           </Disclosure.Button>
@@ -374,13 +374,13 @@ const Navbar = () => {
 
                 <a
                   href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 hover:bg-gray-50"
+                  className="-mx-3 block rounded-lg px-3 py-2 text-neutral font-semibold leading-7 hover:bg-secondary hover:text-white"
                 >
                   Faaliyetler
                 </a>
                 <a
                   href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 hover:bg-gray-50"
+                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 hover:bg-secondary hover:text-white"
                 >
                   İletşim
                 </a>

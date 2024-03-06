@@ -18,9 +18,17 @@
       }
     ],
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": ["./src/app/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/app/components/sidebar/Sidebar.tsx"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    "src/app/components/sidebar/Sidebar.tsx",
+    "src/app/data/socialmedia.js",
+    "src/app/data/haberler.js"
+  ],
   "exclude": ["node_modules"]
 }
