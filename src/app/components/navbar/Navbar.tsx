@@ -12,13 +12,18 @@ import {
 } from "@heroicons/react/24/outline";
 import { Fragment, useState } from "react";
 
-import {
-  ChevronDownIcon,
-  PhoneIcon,
-  PlayCircleIcon,
-} from "@heroicons/react/20/solid";
+import { ChevronDownIcon } from "@heroicons/react/20/solid";
 import Image from "next/image";
 import Link from "next/link";
+import {
+  FaBrain,
+  FaChessKnight,
+  FaChessQueen,
+  FaChessRook,
+  FaLaptopMedical,
+} from "react-icons/fa";
+import { GrSecure } from "react-icons/gr";
+import { FaMeta } from "react-icons/fa6";
 
 const kurumsal = [
   {
@@ -40,9 +45,53 @@ const kurumsal = [
     icon: UserIcon,
   },
 ];
-const callsToAction = [
-  { name: "Watch demo", href: "#", icon: PlayCircleIcon },
-  { name: "Contact sales", href: "#", icon: PhoneIcon },
+
+const kurullarimiz = [
+  {
+    name: "Yönetim Kurulu",
+    description: "",
+    href: "/yonetimkurulu",
+    icon: FaChessQueen,
+  },
+  {
+    name: "Denetim Kurulu",
+    description: "",
+    href: "/denetimkurulu",
+    icon: FaChessRook,
+  },
+  {
+    name: "Komiteler",
+    description: "",
+    href: "/komiteler",
+    icon: FaChessKnight,
+  },
+];
+
+const calistay = [
+  {
+    name: "Yapay Zeka ve Robotlar",
+    description: "",
+    href: "/yapayzeka",
+    icon: FaBrain,
+  },
+  {
+    name: "Güvenlik ve Siber Güvenlik",
+    description: "",
+    href: "/guvenlik",
+    icon: GrSecure,
+  },
+  {
+    name: "Medikal Yapay Zeka",
+    description: "",
+    href: "/medikal",
+    icon: FaLaptopMedical,
+  },
+  {
+    name: "Metaverse ve Konferans",
+    description: "",
+    href: "/metaverse",
+    icon: FaMeta,
+  },
 ];
 
 function classNames(...classes: string[]) {
@@ -132,7 +181,7 @@ const Navbar = () => {
               </Popover.Panel>
             </Transition>
           </Popover>
-          <Popover className="relative ">
+          <Popover className="relative">
             <Popover.Button className="flex outline-none items-center gap-x-1 text-sm font-semibold leading-6 ">
               Kurullarımız
               <ChevronDownIcon
@@ -152,23 +201,25 @@ const Navbar = () => {
             >
               <Popover.Panel className="absolute -left-8 top-full z-10 mt-3 xl:w-screen max-w-md overflow-hidden rounded-3xl bg-base-300 shadow-lg ring-1 ring-gray-900/5">
                 <div className="p-4">
-                  {kurumsal.map((item) => (
+                  {kurullarimiz.map((item) => (
                     <div
                       key={item.name}
                       className="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-primary"
                     >
-                      <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
+                      <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-base group-hover:bg-base-300">
                         <item.icon
-                          className="h-6 w-6 text-gray-600 group-hover:text-orange-600"
+                          className="h-6 w-6 text-orange-500 group-hover:text-orange-600"
                           aria-hidden="true"
                         />
                       </div>
                       <div className="flex-auto">
-                        <a href={item.href} className="block font-semibold ">
+                        <Link href={item.href} className="block font-semibold ">
                           {item.name}
                           <span className="absolute inset-0" />
-                        </a>
-                        <p className="mt-1 text-gray-600">{item.description}</p>
+                        </Link>
+                        <p className="mt-1 text-base opacity-65 cursor-pointer">
+                          {item.description}
+                        </p>
                       </div>
                     </div>
                   ))}
@@ -196,23 +247,25 @@ const Navbar = () => {
             >
               <Popover.Panel className="absolute -left-8 top-full z-10 mt-3 xl:w-screen max-w-md overflow-hidden rounded-3xl bg-base-300 shadow-lg ring-1 ring-gray-900/5">
                 <div className="p-4">
-                  {kurumsal.map((item) => (
+                  {calistay.map((item) => (
                     <div
                       key={item.name}
-                      className="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50"
+                      className="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-primary"
                     >
-                      <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
+                      <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-base group-hover:bg-base-300">
                         <item.icon
-                          className="h-6 w-6 text-gray-600 group-hover:text-indigo-600"
+                          className="h-6 w-6 text-orange-500 group-hover:text-orange-600"
                           aria-hidden="true"
                         />
                       </div>
                       <div className="flex-auto">
-                        <a href={item.href} className="block font-semibold ">
+                        <Link href={item.href} className="block font-semibold ">
                           {item.name}
                           <span className="absolute inset-0" />
-                        </a>
-                        <p className="mt-1 text-gray-600">{item.description}</p>
+                        </Link>
+                        <p className="mt-1 text-base opacity-65 cursor-pointer">
+                          {item.description}
+                        </p>
                       </div>
                     </div>
                   ))}
@@ -342,7 +395,7 @@ const Navbar = () => {
                         />
                       </Disclosure.Button>
                       <Disclosure.Panel className="mt-2 space-y-2">
-                        {[...kurumsal, ...callsToAction].map((item) => (
+                        {kurullarimiz.map((item) => (
                           <Disclosure.Button
                             key={item.name}
                             as="a"
@@ -370,7 +423,7 @@ const Navbar = () => {
                         />
                       </Disclosure.Button>
                       <Disclosure.Panel className="mt-2 space-y-2">
-                        {[...kurumsal, ...callsToAction].map((item) => (
+                        {[...kurumsal].map((item) => (
                           <Disclosure.Button
                             key={item.name}
                             as="a"

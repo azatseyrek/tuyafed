@@ -12,8 +12,8 @@ const Tuzuk = () => {
         className="w-full h-[200px] md:h-[300px] lg:h-[400px] xl:h-[600px] object-cover object-top"
       />
       <section className="flex flex-col gap-6">
-        <h2 className="text-xl lg:text-4xl font-bold text-orange-500 text-center">
-          YAZILIMCILAR FEDERASYONU TÜZÜĞÜ
+        <h2 className="text-xl lg:text-4xl font-bold text-secondary">
+          Yazılımcılar Federasyonu Tüzüğü
         </h2>
         <div className="flex flex-col gap-3 ">
           <h3 className="font-semibold text-lg">Adı ve Merkezi</h3>
