@@ -106,10 +106,24 @@ body {
     line-height: 1;
 }
 
+html,
+body,
+:root {
+    height: 100%
+}
+
 
 blockquote,
 q {
     quotes: none;
+}
+
+/* disable image drag */
+img {
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
 }
 
 blockquote:before,

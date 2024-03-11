@@ -22,26 +22,26 @@ import {
   FaChessRook,
   FaLaptopMedical,
 } from "react-icons/fa";
-import { GrSecure } from "react-icons/gr";
 import { FaMeta } from "react-icons/fa6";
+import { GrSecure } from "react-icons/gr";
 
 const kurumsal = [
   {
     name: "Hakkımızda",
     description: "",
-    href: "hakkimizda",
+    href: "/kurumsal/hakkimizda",
     icon: MegaphoneIcon,
   },
   {
     name: "Tüzük",
     description: "",
-    href: "/tuzuk",
+    href: "/kurumsal/tuzuk",
     icon: BookOpenIcon,
   },
   {
     name: "Başkanın Mesajı",
     description: "",
-    href: "/baskaninmesaji",
+    href: "/kurumsal/baskaninmesaji",
     icon: UserIcon,
   },
 ];
@@ -50,19 +50,19 @@ const kurullarimiz = [
   {
     name: "Yönetim Kurulu",
     description: "",
-    href: "/yonetimkurulu",
+    href: "/kurullar/yonetim-kurulu",
     icon: FaChessQueen,
   },
   {
     name: "Denetim Kurulu",
     description: "",
-    href: "/denetimkurulu",
+    href: "/kurullar/denetim-kurulu",
     icon: FaChessRook,
   },
   {
     name: "Komiteler",
     description: "",
-    href: "/komiteler",
+    href: "/kurullar/komiteler",
     icon: FaChessKnight,
   },
 ];
