@@ -6,8 +6,8 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick-theme.css";
 import "slick-carousel/slick/slick.css";
 
-import NewsCard from "./components/news-card/NewsCard";
-import { data_haberler } from "./data/haberler";
+import NewsCard from "../components/news-card/NewsCard";
+import { data_haberler } from "../data/haberler";
 import Link from "next/link";
 
 export default function Home() {
@@ -62,44 +62,48 @@ export default function Home() {
 
   return (
     <div className="grid grid-cols-1 gap-12 lg:gap-20">
-      <Slider {...settings} autoplay className="-z-0">
+      <Slider {...settings} className="-z-0">
         <div>
-          <div className="hero h-[400px] lg:h-[600px] bg-[url(https://images.unsplash.com/photo-1549778399-f94fd24d4697?q=80&w=1548&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)]">
+          <div className="hero h-[400px] lg:h-[600px] bg-[url(https://www.tuyafed.org/upload/blog/2435276540634367.png)]">
             <div className="hero-overlay bg-opacity-50"></div>
-            <div className="hero-content text-left  w-full text-neutral-content">
-              <div className="flex flex-col items-end gap-6">
+            <div className="hero-content w-full text-neutral-content px-12">
+              <div className="flex flex-col items-start gap-6 ">
                 <h1 className=" text-2xl lg:text-3xl text-primary font-bold self-start ">
-                  Provident cupiditate voluptatem et in. Quaerat fugiat ut
+                  BloombergHT TV'de Gündem Teknoloji Programının Konuğu: Başkan
+                  Mustafa Çalış
                 </h1>
                 <p className="self-start">
-                  Provident cupiditate voluptatem et in. Quaerat fugiat ut
-                  assumenda excepturi exercitationem quasi. In deleniti eaque
-                  aut repudiandae et a id nisi.
+                  BloombergHT TV &rsquo;de Hande Berktan&apos;ın hazırlayıp
+                  sunduğu Gündem Teknoloji Programının konuğu olan Tüyafed Genel
+                  Başkanımız Mustafa Çalış, sektörlerimize ...
                 </p>
-                <button className="btn btn-outline btn-primary">Devamı</button>
+                <a href="faaliyetler/13" className="btn btn-primary">
+                  Devamı
+                </a>
               </div>
             </div>
           </div>
         </div>
         <div>
-          <div className="hero h-[400px] lg:h-[600px] bg-[url(https://images.unsplash.com/photo-1549778399-f94fd24d4697?q=80&w=1548&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)]">
-            <div className="hero-overlay bg-opacity-50"></div>
-            <div className="hero-content text-left  w-full text-neutral-content px-12">
-              <div className="flex flex-col items-end gap-6">
+          <div className="hero h-[400px] lg:h-[600px] bg-[url(https://www.tuyafed.org/upload/projects/1886613985652263.jpg)]">
+            <div className="hero-overlay bg-opacity-50" />
+            <div className="hero-content w-full text-neutral-content px-12">
+              <div className="flex flex-col items-start gap-6 ">
                 <h1 className=" text-2xl lg:text-3xl text-primary font-bold self-start ">
-                  Provident cupiditate voluptatem et in. Quaerat fugiat ut
+                  Güvenlik ve Siber Güvenlik Teknolojileri Çalıştayı ISAF
+                  Exclusive Fuarında yapıldı
                 </h1>
                 <p className="self-start">
-                  Provident cupiditate voluptatem et in. Quaerat fugiat ut
-                  assumenda excepturi exercitationem quasi. In deleniti eaque
-                  aut repudiandae et a id nisi.
+                  TÜYAFED Yazılımcılar Federasyonu ve ISAF Exclusive işbirliği
+                  ile organize edilen Siber güvenlik ağırlıklı konuların ele
+                  alındığı “Güvenlik ve Siber Güvenlik...
                 </p>
-                <Link
-                  href="/hakkimizda"
-                  className="btn btn-outline btn-primary"
+                <a
+                  href="/calistay/guvenlik-ve-siber-guvenlik"
+                  className="btn btn-primary"
                 >
                   Devamı
-                </Link>
+                </a>
               </div>
             </div>
           </div>
@@ -333,14 +337,6 @@ export default function Home() {
             </div>
           </li>
         </ul>
-        {/* <iframe
-          width="1008"
-          height="554"
-          src="https://www.youtube.com/embed/XEVxFvvtSYA"
-          title="Yazılım ve İletişim Teknolojisiyle Değişen Dünya ve Geleceği"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowFullScreen
-        ></iframe> */}
       </section>
       <section className="py-6 doted-bg">
         <Slider
