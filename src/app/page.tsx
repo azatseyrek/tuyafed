@@ -65,7 +65,7 @@ export default function Home() {
         <div>
           <div className="hero h-[400px] lg:h-[600px] bg-[url(https://www.tuyafed.org/upload/blog/2435276540634367.png)]">
             <div className="hero-overlay bg-opacity-50"></div>
-            <div className="hero-content w-full text-neutral-content px-12">
+            <div className="hero-content w-full text-neutral-content px-4 lg:px-8 xl:px-12">
               <div className="flex flex-col items-start gap-6 ">
                 <h1 className=" text-2xl lg:text-3xl text-primary font-bold self-start ">
                   BloombergHT TV&apos;de Gündem Teknoloji Programının Konuğu: Başkan
