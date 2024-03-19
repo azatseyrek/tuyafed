@@ -7,8 +7,7 @@ import "slick-carousel/slick/slick-theme.css";
 import "slick-carousel/slick/slick.css";
 
 import NewsCard from "../components/news-card/NewsCard";
-import { data_haberler } from "../data/haberler";
-import Link from "next/link";
+import {data_haberler} from "../data/haberler";
 
 export default function Home() {
   let settings = {
@@ -69,7 +68,7 @@ export default function Home() {
             <div className="hero-content w-full text-neutral-content px-12">
               <div className="flex flex-col items-start gap-6 ">
                 <h1 className=" text-2xl lg:text-3xl text-primary font-bold self-start ">
-                  BloombergHT TV'de Gündem Teknoloji Programının Konuğu: Başkan
+                  BloombergHT TV&apos;de Gündem Teknoloji Programının Konuğu: Başkan
                   Mustafa Çalış
                 </h1>
                 <p className="self-start">
