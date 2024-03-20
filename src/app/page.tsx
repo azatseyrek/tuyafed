@@ -70,11 +70,11 @@ export default function Home() {
             <div className="hero-overlay bg-opacity-50" />
             <div className="hero-content w-full text-neutral-content px-2 lg:px-8 xl:px-12">
               <div className="flex flex-col items-start gap-4 ">
-                <span className=" text-xl lg:text-3xl text-primary font-bold self-start ">
+                <span className=" text-2xl lg:text-3xl text-primary font-bold self-start ">
                   BloombergHT TV&apos;de Gündem Teknoloji Programının Konuğu:
                   Başkan Mustafa Çalış
                 </span>
-                <p className="self-start text-sm md:text-lg">
+                <p className="self-start text-md md:text-lg">
                   BloombergHT TV &rsquo;de Hande Berktan&apos;ın hazırlayıp
                   sunduğu Gündem Teknoloji Programının konuğu olan Tüyafed Genel
                   Başkanımız Mustafa Çalış, sektörlerimize ...
@@ -91,11 +91,11 @@ export default function Home() {
             <div className="hero-overlay bg-opacity-50" />
             <div className="hero-content w-full text-neutral-content px-2 lg:px-8 xl:px-12">
               <div className="flex flex-col items-start gap-4 ">
-                <span className=" text-xl lg:text-3xl text-primary font-bold self-start ">
+                <span className=" text-2xl lg:text-3xl text-primary font-bold self-start ">
                   Güvenlik ve Siber Güvenlik Teknolojileri Çalıştayı ISAF
                   Exclusive Fuarında yapıldı
                 </span>
-                <p className="self-start text-sm md:text-lg">
+                <p className="self-start text-md md:text-lg">
                   TÜYAFED Yazılımcılar Federasyonu ve ISAF Exclusive işbirliği
                   ile organize edilen Siber güvenlik ağırlıklı konuların ele
                   alındığı “Güvenlik ve Siber Güvenlik...
