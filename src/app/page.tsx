@@ -9,8 +9,10 @@ import "slick-carousel/slick/slick.css";
 import NewsCard from "../components/news-card/NewsCard";
 import { data_haberler } from "../data/haberler";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 export default function Home() {
+  const router = useRouter();
   let settings = {
     dots: true,
     infinite: true,
@@ -66,8 +68,8 @@ export default function Home() {
         <div>
           <div className="hero h-[400px] lg:h-[600px] bg-[url(https://www.tuyafed.org/upload/blog/2435276540634367.png)]">
             <div className="hero-overlay bg-opacity-50"></div>
-            <div className="hero-content w-full text-neutral-content px-4 lg:px-8 xl:px-12">
-              <div className="flex flex-col items-start gap-6 ">
+            <div className="hero-content w-full text-neutral-content px-2 lg:px-8 xl:px-12">
+              <div className="flex flex-col items-start gap-4 ">
                 <h1 className=" text-2xl lg:text-3xl text-primary font-bold self-start ">
                   BloombergHT TV&apos;de Gündem Teknoloji Programının Konuğu:
                   Başkan Mustafa Çalış
@@ -77,7 +79,7 @@ export default function Home() {
                   sunduğu Gündem Teknoloji Programının konuğu olan Tüyafed Genel
                   Başkanımız Mustafa Çalış, sektörlerimize ...
                 </p>
-                <a href="faaliyetler/13" className="btn btn-primary">
+                <a href="faaliyetler/13" className="btn btn-primary self-end">
                   Devamı
                 </a>
               </div>
@@ -148,9 +150,13 @@ export default function Home() {
       <section className="flex flex-col gap-8">
         <div className="flex justify-between">
           <h3 className="text-4xl font-semibold text-secondary">Haberler</h3>
-          <Link href="/faaliyetler" className="btn btn-secondary">
-            TÜMÜ
-          </Link>
+          <button
+            // href="/faaliyetler"
+            onClick={() => router.push("/faaliyetler")}
+            className="btn btn-outline btn-secondary"
+          >
+            Tümü
+          </button>
         </div>
 
         <div className="grid-container">
