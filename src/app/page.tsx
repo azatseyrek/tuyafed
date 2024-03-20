@@ -7,7 +7,8 @@ import "slick-carousel/slick/slick-theme.css";
 import "slick-carousel/slick/slick.css";
 
 import NewsCard from "../components/news-card/NewsCard";
-import {data_haberler} from "../data/haberler";
+import { data_haberler } from "../data/haberler";
+import Link from "next/link";
 
 export default function Home() {
   let settings = {
@@ -68,8 +69,8 @@ export default function Home() {
             <div className="hero-content w-full text-neutral-content px-4 lg:px-8 xl:px-12">
               <div className="flex flex-col items-start gap-6 ">
                 <h1 className=" text-2xl lg:text-3xl text-primary font-bold self-start ">
-                  BloombergHT TV&apos;de Gündem Teknoloji Programının Konuğu: Başkan
-                  Mustafa Çalış
+                  BloombergHT TV&apos;de Gündem Teknoloji Programının Konuğu:
+                  Başkan Mustafa Çalış
                 </h1>
                 <p className="self-start">
                   BloombergHT TV &rsquo;de Hande Berktan&apos;ın hazırlayıp
@@ -86,7 +87,7 @@ export default function Home() {
         <div>
           <div className="hero h-[400px] lg:h-[600px] bg-[url(https://www.tuyafed.org/upload/projects/1886613985652263.jpg)]">
             <div className="hero-overlay bg-opacity-50" />
-            <div className="hero-content w-full text-neutral-content px-12">
+            <div className="hero-content w-full text-neutral-content px-4 lg:px-8 xl:px-12">
               <div className="flex flex-col items-start gap-6 ">
                 <h1 className=" text-2xl lg:text-3xl text-primary font-bold self-start ">
                   Güvenlik ve Siber Güvenlik Teknolojileri Çalıştayı ISAF
@@ -136,13 +137,20 @@ export default function Home() {
             ile birlikte Melek yatırımcıları bir araya getirmek olacaktır. Bu
             kapsamda oluşturulan komitelerin sağlıklı çalışmal...
           </h4>
-          <button className="self-end btn btn-secondary">Devamı</button>
+          <Link
+            href="kurumsal/baskaninmesaji"
+            className="self-end btn btn-secondary"
+          >
+            Devamı
+          </Link>
         </aside>
       </section>
       <section className="flex flex-col gap-8">
         <div className="flex justify-between">
           <h3 className="text-4xl font-semibold text-secondary">Haberler</h3>
-          <button className="btn btn-outline btn-secondary">TÜMÜ</button>
+          <Link href="/faaliyetler" className="btn btn-secondary">
+            TÜMÜ
+          </Link>
         </div>
 
         <div className="grid-container">
