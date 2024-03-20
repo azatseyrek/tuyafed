@@ -67,14 +67,14 @@ export default function Home() {
       <Slider {...settings} className="-z-0">
         <div>
           <div className="hero h-[400px] lg:h-[600px] bg-[url(https://www.tuyafed.org/upload/blog/2435276540634367.png)]">
-            <div className="hero-overlay bg-opacity-50"></div>
+            <div className="hero-overlay bg-opacity-50" />
             <div className="hero-content w-full text-neutral-content px-2 lg:px-8 xl:px-12">
               <div className="flex flex-col items-start gap-4 ">
-                <h1 className=" text-2xl lg:text-3xl text-primary font-bold self-start ">
+                <span className=" text-xl lg:text-3xl text-primary font-bold self-start ">
                   BloombergHT TV&apos;de Gündem Teknoloji Programının Konuğu:
                   Başkan Mustafa Çalış
-                </h1>
-                <p className="self-start">
+                </span>
+                <p className="self-start text-sm md:text-lg">
                   BloombergHT TV &rsquo;de Hande Berktan&apos;ın hazırlayıp
                   sunduğu Gündem Teknoloji Programının konuğu olan Tüyafed Genel
                   Başkanımız Mustafa Çalış, sektörlerimize ...
@@ -89,20 +89,20 @@ export default function Home() {
         <div>
           <div className="hero h-[400px] lg:h-[600px] bg-[url(https://www.tuyafed.org/upload/projects/1886613985652263.jpg)]">
             <div className="hero-overlay bg-opacity-50" />
-            <div className="hero-content w-full text-neutral-content px-4 lg:px-8 xl:px-12">
-              <div className="flex flex-col items-start gap-6 ">
-                <h1 className=" text-2xl lg:text-3xl text-primary font-bold self-start ">
+            <div className="hero-content w-full text-neutral-content px-2 lg:px-8 xl:px-12">
+              <div className="flex flex-col items-start gap-4 ">
+                <span className=" text-xl lg:text-3xl text-primary font-bold self-start ">
                   Güvenlik ve Siber Güvenlik Teknolojileri Çalıştayı ISAF
                   Exclusive Fuarında yapıldı
-                </h1>
-                <p className="self-start">
+                </span>
+                <p className="self-start text-sm md:text-lg">
                   TÜYAFED Yazılımcılar Federasyonu ve ISAF Exclusive işbirliği
                   ile organize edilen Siber güvenlik ağırlıklı konuların ele
                   alındığı “Güvenlik ve Siber Güvenlik...
                 </p>
                 <a
                   href="/calistay/guvenlik-ve-siber-guvenlik"
-                  className="btn btn-primary"
+                  className="btn btn-primary self-end"
                 >
                   Devamı
                 </a>
